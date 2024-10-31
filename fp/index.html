@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlightPool</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="img">
+            <img src="logo.png" alt="FlightPool Logo" class="src">
+            <div class="logo test-0-logo">Flight Pool</div>
+
+
+            <nav class="navigation">
+                <ul class="nav-left">
+                    <li><a href="promotions.html" class="test-0-nav-1">Акции</a></li>
+                    <li><a href="search.html" class="test-0-nav-2">Поиск</a></li>
+                </ul>
+                <ul class="nav-right">
+                    <li><a href="registration.html" class="test-0-nav-3">Регистрация на рейс</a></li>
+                    <li><a href="profile.html" class="test-0-nav-4">Личный кабинет</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Секция описания принципа накопления бронирований -->
+    <section class="booking-principles">
+        <h2>Принципы накопления бронирований</h2>
+        <form id="booking-form">
+            <label for="booking-date">Выберите дату:</label>
+            <input type="date" id="booking-date" required>
+
+            <label for="booking-count">Количество бронирований:</label>
+            <input type="number" id="booking-count" min="1" max="10" required>
+
+            <button type="submit">Показать изменения</button>
+        </form>
+
+        <div id="results">
+            <h3>Результаты</h3>
+            <p id="price">Стоимость: <span id="price-value">0</span> руб.</p>
+            <p id="probability">Вероятность вылета: <span id="probability-value">0</span>%</p>
+        </div>
+    </section>
+
+
+    <!-- Секция о доверии компании -->
+    <section class="trust-section">
+        <div class="trust-image">
+            <img src="images/gg.jpg" alt="Доверие к компании" class="dov">
+            <div class="trust-text">
+                <h2>Доверие к нашей компании</h2>
+                <p>Мы гарантируем безопасность и надежность ваших перелетов.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма поиска -->
+    <section class="search-form">
+        <h2>Поиск рейсов</h2>
+        <form>
+            <div class="form-group">
+                <label for="departure">Откуда:</label>
+                <input type="text" id="departure" class="test-0-fd" placeholder="Введите город или аэропорт отправления"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="destination">Куда:</label>
+                <input type="text" id="destination" class="test-0-fa"
+                    placeholder="Введите город или аэропорт назначения" required>
+            </div>
+
+            <div class="form-group">
+                <label for="departure-date">Туда:</label>
+                <input type="date" id="departure-date" class="test-0-fdt-" required>
+            </div>
+
+            <div class="form-group">
+                <label for="return-date">Обратно:</label>
+                <input type="date" id="return-date" class="test-0-fat" required>
+            </div>
+
+            <div class="form-group">
+                <label for="passengers">Количество пассажиров:</label>
+                <input type="number" id="passengers" min="1" max="8" class="test-0-fnp" placeholder="1-8" required>
+            </div>
+
+            <button type="submit" class="test-0-fbs">Найти билеты</button>
+        </form>
+    </section>
+
+
+    <!-- Акции -->
+    <section class="promotions">
+        <h2>Акции</h2>
+        <div class="promotion-grid">
+            <div class="promotion-item">
+                <img src="images/promotions/promotion1.jpg" alt="Акция 1" class="test-0-ai">
+                <h3 class="test-0-an">Собирайте чемоданы</h3>
+                <p class="test-0-ad">Краткое описание акции 1. Здесь вы можете узнать о специальных предложениях.</p>
+                <button class="test-0-abm">Подробнее</button>
+            </div>
+
+            <div class="promotion-item">
+                <img src="images/promotions/promotion2.jpg" alt="Акция 2" class="test-0-ai">
+                <h3 class="test-0-an">Прекрасные виды</h3>
+                <p class="test-0-ad">Краткое описание акции 2. Узнайте о наших эксклюзивных предложениях.</p>
+                <button class="test-0-abm">Подробнее</button>
+            </div>
+
+            <div class="promotion-item">
+                <img src="images/promotions/promotion3.jpg" alt="Акция 3" class="test-0-ai">
+                <h3 class="test-0-an">Семья - это главное!</h3>
+                <p class="test-0-ad">Краткое описание акции 3. Не пропустите наши выгодные предложения.</p>
+                <button class="test-0-abm">Подробнее</button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Форма подписки -->
+    <section class="subscription-form">
+        <h2>Подписка на закрытые акции</h2>
+        <form>
+            <input type="email" class="test-0-sie" placeholder="Введите ваш Email">
+            <button type="submit" class="test-0-sbs">Подписаться</button>
+        </form>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <p class="test-0-phone">Телефон: 8 (800) 100-10-10</p>
+        <nav class="footer-navigation">
+            <!-- Навигация по сайту -->
+
+            <li><a href="promotions.html" class="test-0-nav-1">Акции</a></li>
+            <li><a href="search.html" class="test-0-nav-2">Поиск</a></li>
+            <li><a href="registration.html" class="test-0-nav-3">Регистрация на рейс</a></li>
+            <li><a href="profile.html" class="test-0-nav-4">Личный кабинет</a></li>
+
+        </nav>
+    </footer>
+
+</body>
+
+</html>
